@@ -42,7 +42,7 @@ app.post("/api/tiempo", (req, res) => {
      
         let _body = JSON.parse(body);
 
-        console.log(_body['city']['coord']);
+        console.log(_body['city']['coord'][0]);
         
         let forecast = _body['city']['coord'][0];
   
@@ -53,6 +53,12 @@ app.post("/api/tiempo", (req, res) => {
         // Resolve the promise with the output text
         console.log(output);
         
+        
+        let _response = new Object();
+        _response.speech = `La temperatura prevista para el  `;
+        _response.displayText = _response.speech;
+        _response.source = "webhook";
+        res.status(_body.cod).send(_response);
         // Que no de error el servicio externo
      
      /*   
