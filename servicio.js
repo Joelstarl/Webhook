@@ -38,7 +38,11 @@ app.post("/api/tiempo", (req, res) => {
         // Convertimos a JSON, la respuesta del servicio
         let _body = JSON.parse(body);
 
+      
+        
         // Que no de error el servicio externo
+     
+     /*   
         if (_body.cod === '200') {
 
             // Peque�as conversiones
@@ -68,7 +72,10 @@ app.post("/api/tiempo", (req, res) => {
             }).catch(err) => {
                 console.error(err);
             });*/
-        }
+        }  
+        
+        */
+        
     });
 });
 
