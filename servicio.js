@@ -94,7 +94,7 @@ app.post("/api/tiempo", (req, res) => {
     //    } 
     });
     
-   return res.json({ 'fulfillmentText' });   
+   return res.json({ 'fulfillmentText': 'Current conditions' });   
     
 });
 
