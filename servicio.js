@@ -22,7 +22,9 @@ app.use(bodyParser.json());
 
 // M�todos de ruta (VERBOS HTTP: POST, GET, PUT, DELETE, etc...). Endpoint
 app.post("/api/tiempo", (req, res) => {
-
+    
+    console.log(req.body);
+    
     // JSON QUE ENVIA DIALOGFLOW
     let ubicacion = req.body.result.parameters["any"];
 
