@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "servicio.js",
-  " motores " : {
-    " nodo " : " 9.5.x " ,
-    " npm " : " 5.7.1 "
+  "engines": {
+    "node": "9.5.x",
+    "npm": "5.7.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
