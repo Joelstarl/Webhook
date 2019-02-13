@@ -41,6 +41,15 @@ app.post("/api/tiempo", (req, res) => {
         let _body = JSON.parse(body);
 
         console.log(_body);
+        let response = JSON.parse(body);
+        let forecast = response['list']['weather'][0];
+  
+
+        // Create response
+        let output = `descripcion ${forecast['description']}.`;
+
+        // Resolve the promise with the output text
+        console.log(output);
         
         // Que no de error el servicio externo
      
