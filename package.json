@@ -8,13 +8,12 @@
     "npm": "5.7.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start" : " node servicio.js "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "google-translate-api": "^2.3.0",
