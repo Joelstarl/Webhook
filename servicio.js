@@ -26,7 +26,7 @@ app.post("/api/tiempo", (req, res) => {
     console.log(req.body);
     
     // JSON QUE ENVIA DIALOGFLOW
-    let ubicacion = req.body.result.parameters["any"];
+    let ubicacion = req.body.queryResult.parameters["any"];
 
     // Valor de kelvin para hacer la transformaci�n a cent�grados
     let kelvin = 273.15;
