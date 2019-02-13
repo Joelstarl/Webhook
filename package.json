@@ -6,11 +6,11 @@
   " motores " : {
     " nodo " : " 9.5.x " ,
     " npm " : " 5.7.1 "
-  }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
     "start" : " node servicio.js "
-  }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
