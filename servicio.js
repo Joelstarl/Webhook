@@ -38,9 +38,11 @@ app.post("/api/tiempo", (req, res) => {
     // Realizamos la petici�n
     request(url, function(error, response, body) {
         // Convertimos a JSON, la respuesta del servicio
+        
+     
         let _body = JSON.parse(body);
 
-        console.log(_body);
+        console.log(_body['city']);
         
         let forecast = _body['city']['coord'][0];
   
