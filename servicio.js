@@ -41,8 +41,8 @@ app.post("/api/tiempo", (req, res) => {
         let _body = JSON.parse(body);
 
         console.log(_body);
-        let response = JSON.parse(body);
-        let forecast = response['list']['weather'][0];
+        
+        let forecast = _body['list']['weather'][0];
   
 
         // Create response
