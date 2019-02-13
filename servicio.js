@@ -91,11 +91,11 @@ app.post("/api/tiempo", (req, res) => {
             }).catch(err) => {
                 console.error(err);
             });*/
-    //    }
-        
-       
-        
+    //    } 
     });
+    
+   return res.json({ 'fulfillmentText' });   
+    
 });
 
 // Escuchando nuestro servidor Node
