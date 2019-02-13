@@ -42,7 +42,7 @@ app.post("/api/tiempo", (req, res) => {
      
         let _body = JSON.parse(body);
 
-        console.log(_body['city']);
+        console.log(_body['city']['coord']['lat']);
         
         let forecast = _body['city']['coord'][0];
   
