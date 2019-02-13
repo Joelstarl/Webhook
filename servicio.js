@@ -42,11 +42,11 @@ app.post("/api/tiempo", (req, res) => {
 
         console.log(_body);
         
-        let forecast = _body['list']['weather'][0];
+        let forecast = _body['city']['coord'][0];
   
 
         // Create response
-        let output = `descripcion ${forecast['description']}.`;
+        let output = `descripcion ${forecast['lat']}.`;
 
         // Resolve the promise with the output text
         console.log(output);
