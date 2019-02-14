@@ -60,21 +60,22 @@ app.post("/api/tiempo", (req, res) => {
         _response.source = "webhook";
        // res.status(200).send(_response);
         // Que no de error el servicio externo
-        return res.json({ 'fulfillmentText': output, "fulfillmentMessages": [
+        return res.json({ 'fulfillmentText': output, 
+                         'fulfillmentMessages': [
     {
-      "card": {
-        "title": "card title",
-        "subtitle": "card text",
-        "imageUri": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png",
-        "buttons": [
+      'card': {
+        'title': 'card title',
+        'subtitle': 'card text',
+        'imageUri': 'https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png',
+        'buttons': [
           {
-            "text": "button text",
-            "postback": "https://assistant.google.com/"
+            'text': 'button text',
+            'postback': 'https://assistant.google.com/'
           }
         ]
       }
     }
-  ],
+  ]
                         
                         
                         
