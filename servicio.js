@@ -36,7 +36,7 @@ app.post("/api/tiempo", (req, res) => {
     `;
 
     // Realizamos la petici�n
-    request(url, function(error, response, body) {
+    var valor = request(url, function(error, response, body) {
         // Convertimos a JSON, la respuesta del servicio
         
      
@@ -94,7 +94,7 @@ app.post("/api/tiempo", (req, res) => {
     //    } 
     });
     
-   return res.json({ 'fulfillmentText': 'Current conditions' });   
+   return res.json({ 'fulfillmentText': valor });   
     
 });
 
