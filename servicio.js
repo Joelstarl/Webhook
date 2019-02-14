@@ -60,7 +60,7 @@ app.post("/api/tiempo", (req, res) => {
         _response.source = "webhook";
        // res.status(200).send(_response);
         // Que no de error el servicio externo
-     
+        return res.json({ 'fulfillmentText': output }); 
      /*   
         if (_body.cod === '200') {
 
@@ -94,7 +94,7 @@ app.post("/api/tiempo", (req, res) => {
     //    } 
     });
     
-   return res.json({ 'fulfillmentText': output });   
+    
     
 });
 
