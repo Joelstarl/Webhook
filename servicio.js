@@ -15,7 +15,6 @@ const port = process.env.PORT || 8899;
 
 // Middleware de an�lisis del cuerpo de Node.js 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 
 // M�todos de ruta (VERBOS HTTP: POST, GET, PUT, DELETE, etc...). Endpoint
 app.post("/api/tiempo", (req, res) => {
