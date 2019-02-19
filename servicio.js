@@ -54,13 +54,16 @@ app.post("/api/tiempo", (req, res) => {
         console.log(output);
         
         
-        let _response = new Object();
-        _response.speech = `La temperatura prevista para el  `;
-        _response.displayText = _response.speech;
-        _response.source = "webhook";
+       // let _response = new Object();
+      //  _response.speech = `La temperatura prevista para el  `;
+      //  _response.displayText = _response.speech;
+      //  _response.source = "webhook";
        // res.status(200).send(_response);
         // Que no de error el servicio externo
-        return res.json({ 'fulfillmentText': output }); 
+      
+        
+      //  return res.json({ 'fulfillmentText': output }); 
+        return res.json({ 'fulfillmentText': 'hola' }); 
      /*   
         if (_body.cod === '200') {
 
